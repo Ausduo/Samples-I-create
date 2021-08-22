@@ -1,0 +1,21 @@
+import math
+
+print ("Welcome to the simple math helper.")
+what = input ("What would you like to calculate? 1 = sqrt, 2 = Log, 3 = Fractorial : ")  
+
+calc_type = {"1":"sqrt", "2":"log","3":"fractorial"}
+
+num = input("Enter the number to calculate: ") 
+num = int(num)
+fact = 1
+sqrt_num1 = math.sqrt(num)
+
+if what == "1":
+    print (sqrt_num1)       #sqrt calculation code
+elif what == "2":
+    print (math.log(num))   #log calculation code
+elif what == "3":
+    print (math.factorial(num))  #fractorial calculation code
+else:
+    print ("Please try again and remember to use numbers in your response.")
+print ("Thanks for using the calculator")
